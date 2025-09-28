@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Articles & Stories - Harley Verunque</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header / Navbar -->
+  <header class="fixed w-full bg-white shadow z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold">Harley Verunque</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="index.html#projects" class="hover:text-blue-500">Projects</a>
+        <a href="article.html" class="text-blue-600 font-bold">Articles</a> <!-- Active page -->
+        <a href="index.html#contact" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <!-- Mobile menu button -->
+      <button class="md:hidden text-3xl" id="menu-btn"><i class='bx bx-menu'></i></button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="hidden bg-white shadow md:hidden" id="mobile-menu">
+      <a href="index.html#projects" class="block px-6 py-2 hover:bg-gray-100">Projects</a>
+      <a href="article.html" class="block px-6 py-2 bg-blue-100 font-semibold hover:bg-blue-200">Articles</a>
+      <a href="index.html#contact" class="block px-6 py-2 hover:bg-gray-100">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-64 flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6" style="padding-top:4rem;">
+    <h2 class="text-4xl font-bold mb-2">Articles & Stories</h2>
+    <p class="text-lg max-w-2xl">Explore all my articles, stories, and write-ups in one place.</p>
+  </section>
+
+  <!-- Articles List -->
+  <section class="py-20 px-6 bg-gray-100">
+    <div class="container mx-auto space-y-8">
+      <!-- Article 1 -->
+      <article class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <h3 class="font-semibold text-xl mb-2">The Future of Artificial Intelligence and Its Impact on Students</h3>
+        <p class="text-gray-600 mb-4">Explore how AI is transforming learning, reshaping education, and preparing students for a tech-driven future.</p>
+        <a href="https://harescorner.wordpress.com/2025/02/07/the-future-of-artificial-intelligence-and-its-impact-on-students/" target="_blank" class="text-blue-600 hover:underline">Read More →</a>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <h3 class="font-semibold text-xl mb-2">How to Use Social Media for Academic Growth</h3>
+        <p class="text-gray-600 mb-4">Discover strategies for leveraging social media platforms to enhance learning, networking, and academic productivity.</p>
+        <a href="https://harescorner.wordpress.com/2025/02/07/how-to-use-social-media-for-academic-growth/" target="_blank" class="text-blue-600 hover:underline">Read More →</a>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <h3 class="font-semibold text-xl mb-2">The Pros and Cons of Online Learning for Students: A Gen Z Perspective</h3>
+        <p class="text-gray-600 mb-4">An insightful analysis of online learning experiences, challenges, and benefits from the perspective of Gen Z students.</p>
+        <a href="https://harescorner.wordpress.com/2025/02/07/the-pros-and-cons-of-online-learning-for-students-a-gen-z-perspective/" target="_blank" class="text-blue-600 hover:underline">Read More →</a>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <h3 class="font-semibold text-xl mb-2">The Role of Technology in Education</h3>
+        <p class="text-gray-600 mb-4">Learn how technological innovations are shaping teaching methods, classroom environments, and student engagement.</p>
+        <a href="https://harescorner.wordpress.com/2025/02/07/the-role-of-technology-in-education/" target="_blank" class="text-blue-600 hover:underline">Read More →</a>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <h3 class="font-semibold text-xl mb-2">How to Build a Successful Tech Portfolio</h3>
+        <p class="text-gray-600 mb-4">Step-by-step guidance on creating a compelling tech portfolio that impresses employers and showcases your skills.</p>
+        <a href="https://harescorner.wordpress.com/2025/02/08/how-to-build-a-successful-tech-portfolio/" target="_blank" class="text-blue-600 hover:underline">Read More →</a>
+      </article>
+
+      <!-- Redirect to full blog -->
+      <div class="text-center mt-12">
+        <a href="https://harescorner.wordpress.com/blogs/" target="_blank" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition">See All Articles →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & Socials -->
+  <footer class="bg-gray-900 text-white py-10 text-center">
+    <div class="flex justify-center space-x-6 mb-6 text-2xl">
+      <a href="https://github.com/hnverunque/" target="_blank" class="hover:text-black"><i class='bx bxl-github'></i></a>
+      <a href="https://www.linkedin.com/in/hnverunque/" target="_blank" class="hover:text-blue-600"><i class='bx bxl-linkedin-square'></i></a>
+      <a href="https://harescorner.wordpress.com/" target="_blank" class="hover:text-blue-500"><i class='bx bxl-wordpress'></i></a>
+    </div>
+    <p>&copy; 2025 Harley Verunque. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
